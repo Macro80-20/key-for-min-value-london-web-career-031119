@@ -4,8 +4,14 @@
 #key_for_min_value(veggies)
 
 def key_for_min_value(name_hash)
-name_hash.each do
-  |key| #
-  key
+h = ""  #1st 25 2nd25 3rd 35 
+name_hash.collect do |key,value|
+if h == ""||h.is_a?(Integer) # this is true we begin our conditionals
+if h=="" || h > value
+h = value #nothing happen 
 end
 end
+end
+name_hash.key(h)
+end
+ key_for_min_value(ikea)
