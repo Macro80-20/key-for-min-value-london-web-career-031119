@@ -4,11 +4,11 @@
 #key_for_min_value(veggies)
 
 def key_for_min_value(name_hash)
-h = ""  #1st 25 2nd25 3rd 35 
+h = ""  #1st 25 2nd25 3rd 35
 name_hash.collect do |key,value|
 if h == ""||h.is_a?(Integer) # this is true we begin our conditionals
 if h=="" || h > value
-h = value #nothing happen 
+h = value #nothing happen
 end
 end
 end
